@@ -1,0 +1,46 @@
+body {
+    background-color: #111316;
+    font-family: "Inter", serif;
+    margin: 0;
+}
+
+#logo-text {
+    color: #EEEEEE;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    color: #D0D0D0;
+    font-size: 1rem;
+}
+
+h1 {
+    color: #EEEEEE;
+    font-size: 2.5rem;
+}
+
+span {
+    color: #45ABEB;
+}
+
+p {
+    color: #D0D0D0;
+    font-size: 1rem;
+}
+
+.hero-button{
+    color: #EEEEEE;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background-color: #5574B9;
+    padding: 1.5em 2em;
+    border-radius: 15%;
+}
+
+.hero-button.hero-button-inverted{
+    background-color: #111316;
+    border: #5574B9 3px solid;
+    visibility: hidden;
+}
