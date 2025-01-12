@@ -4,43 +4,178 @@ body {
     margin: 0;
 }
 
+/* === Nav Bar === */
+
 #logo-text {
     color: #EEEEEE;
     font-weight: bold;
     font-size: 1rem;
+    align-self: center;
 }
 
+.logo {
+    display: flex;
+    gap: 10px;
+
+}
+
+.hamburger {
+    width: 50%;
+    cursor: pointer;
+}
+
+#logo-img {
+    width: 15%;
+    align-self: center;
+}
+
+/* Replace with hamburger icon on mobile */
 ul {
     list-style-type: none;
     color: #D0D0D0;
     font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    visibility: hidden;
+    display: none;
+}
+
+nav {
+    display: flex;
+    margin: 2em 3em 6em 3em;
+    justify-content: space-between;
+}
+
+/* === Hero Section === */
+header {
+    padding-bottom: 7em;
+    background-image: linear-gradient(#111316 80%, #13223A);
 }
 
 h1 {
     color: #EEEEEE;
     font-size: 2.5rem;
+    letter-spacing: 4px;
+    line-height: 1.25;
+    margin: 0;
 }
 
 span {
-    color: #45ABEB;
+    background: -webkit-linear-gradient(#45ABEB 50%, #0D2A69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
     color: #D0D0D0;
     font-size: 1rem;
+    margin: 3rem 0;
 }
 
 .hero-button{
     color: #EEEEEE;
     font-size: 0.75rem;
     font-weight: bold;
-    background-color: #5574B9;
-    padding: 1.5em 2em;
-    border-radius: 15%;
+    background-color: #5592B9;
+    padding: 1.25em 2.5em;
+    border-radius: 15px;
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .hero-button.hero-button-inverted{
     background-color: #111316;
-    border: #5574B9 3px solid;
-    visibility: hidden;
+    border: #5592B9 3px solid;
+
+}
+
+.hero-image{
+    display: none;
+}
+
+.hero-button:hover {
+    background-color: #0D2A69;
+}
+
+.hero-button-inverted:hover {
+    background-color: #5592B9;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container {
+    text-align: center;
+    width: 90%;
+}
+
+
+
+/* ==== Tablet ==== */
+@media (min-width: 768px) {
+    ul{
+        visibility:visible;
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+
+/* ==== Laptop ==== */
+@media (min-width: 1100px) {
+    #logo-text {
+        font-size: 1.5rem;
+    }
+
+    .hero-image{
+        width: 70%;
+        min-width: 500px;
+        display: inline;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1.25rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+
+    }
+
+    .hero-button.hero-button-inverted {
+        visibility: visible;
+    }
+
+    #hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 6em;
+    }
+
+    .hero-container {
+        min-width: 50%;
+    }
+
+    .hero-container.left{
+        text-align: start;
+    }
+    .hero-image {
+
+    }
 }

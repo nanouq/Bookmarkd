@@ -10,25 +10,35 @@
 <body>
     <header>
         <nav>
-            <img src="./img/bookmark.svg" alt="A picture of a blue bookmark."/>
-            <a id="logo-text">bookmarkd</a>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Browse</li>
-            </ul>
-            <ul>
-                <li>Login</li>
-                <li>Register</li>
-            </ul>
+            <div class="logo">
+                <img id="logo-img" src="./img/bookmark.svg" alt="A picture of a blue bookmark."/>
+                <a id="logo-text">bookmarkd</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Browse</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                </ul>
+                <img class="hamburger" src="./img/hamburger.svg"/>
+            </div>
         </nav>
         <section id="hero-section">
-            <h1>Track Your Reads, Achieve Your <span>Goals</span></h1>
-            <p>Log your books, track your progress, and discover your next favorite read.</p>
-            <a class="hero-button">Start Tracking</a>
-            <a class="hero-button hero-button-inverted">Learn More</a>
-
-            <img src="" class="hero-image" alt="A picture of a stack of books with a cat on top."/>
+            <div class="hero-container left">
+                <h1>Track Your Reads, Achieve Your <span>Goals</span></h1>
+                <p>Log your books, track your progress, and discover your next favorite read.</p>
+                <a class="hero-button">Start Tracking</a>
+                <a class="hero-button hero-button-inverted">Learn More</a>
+            </div>
+            <div class="hero-container">
+                <img src="./img/hero-image.svg" class="hero-image" alt="A picture of a stack of books with a cat on top."/>
+            </div>
         </section>
     </header>
     <main>
