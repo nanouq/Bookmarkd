@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="icon" href="./img/bookmark.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Bookmarkd</title>
+    <title>Bookmarkd | Book Tracker</title>
 </head>
 <body>
     <header>
@@ -31,18 +32,55 @@
         </nav>
         <section id="hero-section">
             <div class="hero-container left">
-                <h1>Track Your Reads, Achieve Your <span>Goals</span></h1>
-                <p>Log your books, track your progress, and discover your next favorite read.</p>
+                <h1 id="hero-title">Track Your Reads, Achieve Your <span>Goals</span></h1>
+                <p id="hero-text">Log your books, track your progress, and discover your next favorite read.</p>
                 <a class="hero-button">Start Tracking</a>
                 <a class="hero-button hero-button-inverted">Learn More</a>
             </div>
-            <div class="hero-container">
+            <div class="hero-container right">
                 <img src="./img/hero-image.svg" class="hero-image" alt="A picture of a stack of books with a cat on top."/>
             </div>
         </section>
     </header>
     <main>
-        <section>
+        <section id="features-section">
+            <h2 class="section-title">Features</h2>
+            <div id="features-container">
+                <div class="features-card">
+                    <img class="features-icon" src="./img/pen.svg"/>
+                    <h3 class="features-title">Track your reads</h3>
+                    <p class="features-text">Keep track of what you read,
+                        what you want to read, and
+                        even what you wanted to read,
+                        but couldn’t quite get into. </p>
+                </div>
+                <div class="features-card">
+                    <img class="features-icon" src="./img/discover.svg"/>
+                    <h3 class="features-title">Discover new favorites</h3>
+                    <p class="features-text">On bookmarkd you can search
+                        for new books, or get
+                        recommendations based on
+                        you reading history, or even
+                        your mood!</p>
+                </div>
+                <div class="features-card">
+                    <img class="features-icon" src="./img/achievement.svg"/>
+                    <h3 class="features-title">Earn rewards</h3>
+                    <p class="features-text">Gamify your reading by earning
+                        EXP and unique achievements
+                        for completing activities like
+                        reading a book or writing a review!
+                    </p>
+                </div>
+                <div class="features-card">
+                    <img class="features-icon" src="./img/social.svg"/>
+                    <h3 class="features-title">Connect with readers</h3>
+                    <p class="features-text">Create your profile and view
+                        other reader profiles. You can
+                        add readers, view their reads,
+                        and interact with their posts.</p>
+                </div>
+            </div>
         </section>
         <section></section>
     </main>

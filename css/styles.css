@@ -1,5 +1,11 @@
+:root {
+    --bg-color: #111316;
+    --text-primary: #EEEEEE;
+    --text-secondary: #B1B1B1;
+}
+
 body {
-    background-color: #111316;
+    background-color: var(--bg-color);
     font-family: "Inter", serif;
     margin: 0;
 }
@@ -56,7 +62,7 @@ header {
     background-image: linear-gradient(#111316 80%, #13223A);
 }
 
-h1 {
+#hero-title {
     color: #EEEEEE;
     font-size: 2.5rem;
     letter-spacing: 4px;
@@ -70,10 +76,11 @@ span {
     -webkit-text-fill-color: transparent;
 }
 
-p {
+#hero-text {
     color: #D0D0D0;
     font-size: 1rem;
     margin: 3rem 0;
+    line-height: 1.5;
 }
 
 .hero-button{
@@ -100,7 +107,7 @@ p {
 }
 
 .hero-button:hover {
-    background-color: #0D2A69;
+    background-color: #5B29AB;
 }
 
 .hero-button-inverted:hover {
@@ -118,7 +125,55 @@ p {
     width: 90%;
 }
 
+/* === Features === */
 
+#features-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 7em;
+    background-image: linear-gradient(#13223A, #111316 20%);
+}
+
+#features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 90%;
+}
+
+.section-title {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5em 0;
+    margin-bottom: 0;
+}
+
+.features-card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 1px #3057AA solid;
+    box-shadow: 0 0 10px #3057AA;
+    border-radius: 15px;
+    width: 80%;
+    padding: 1em;
+}
+
+.features-title {
+    color: var(--text-primary);
+    margin-bottom: 0;
+}
+
+.features-text {
+    color: var(--text-secondary);
+    line-height: 1.5em;
+}
+
+.features-icon {
+    width: 1em;
+}
 
 /* ==== Tablet ==== */
 @media (min-width: 768px) {
@@ -130,6 +185,15 @@ p {
     .hamburger {
         display: none;
     }
+
+    #features-container {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .features-card {
+        align-self: stretch;
+    }
 }
 
 
@@ -140,21 +204,22 @@ p {
     }
 
     .hero-image{
-        width: 70%;
-        min-width: 500px;
+        width: 100%;
+        min-width: 400px;
         display: inline;
     }
 
-    h1 {
+    #hero-title {
         font-size: 4rem;
     }
 
-    p{
+    #hero-text {
         font-size: 1.25rem;
     }
 
     .hero-button {
         font-size: 1rem;
+        margin-bottom: 1em;
 
     }
 
@@ -166,16 +231,29 @@ p {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 6em;
+        gap: 4em;
     }
 
     .hero-container {
-        min-width: 50%;
+
     }
 
     .hero-container.left{
         text-align: start;
+        padding-left: 4em;
+        flex: 2;
+    }
+
+    .hero-container.right {
+        flex: 1;
     }
     .hero-image {
 
     }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+
 }
